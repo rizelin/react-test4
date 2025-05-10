@@ -24,18 +24,21 @@
 
 // export default App;
 function App() {
-  const number = 1;
+  // const number = 1;
 
-  const double = () => {
-    return number * 2
+  // const double = () => {
+  //   return number * 2
+  // }
+  // double();
+
+  const printHello = () => {
+    console.log('hello')
   }
-  double();
+
   return (
     <>
-      <div>{double(number)}</div>
-      <button onClick={() => {
-        console.log('Hello')
-      }}>Submit</button>
+      {/* <div>{double(number)}</div> */}
+      <button onClick={printHello}>Submit</button>
     </>
   )
 }
